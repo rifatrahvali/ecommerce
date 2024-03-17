@@ -92,7 +92,9 @@ li {
     left: auto !important;
     box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
 }
-
+.top-bar .basket-buttons a{
+    border-radius: 0 !important;
+}
 /* kullanıcı sepete ekledikten sonraki ürünlerin divi scroll bar*/
 .overflow-custom {
     max-height: 200px;
