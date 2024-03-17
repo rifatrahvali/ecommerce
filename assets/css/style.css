@@ -1,61 +1,66 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     /* altı çizili olmayacak */
     text-decoration: none;
     color: #2d3a4b;
 }
 
-body{
+body {
     /* ust alt 0 - sağ sol ortala */
     margin: 0 auto;
-    font-family:"Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
 
-.font-montserrat{
-    font-family:"Montserrat", sans-serif;
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
 }
 
-.font-playfair{
+.font-playfair {
     font-family: "Playfair", serif;
 }
 
-.text-orange{
-    color:#f38509;
+.text-orange {
+    color: #f38509;
 }
-.text-yellow{
-    color:#ffe115;
+
+.text-yellow {
+    color: #ffe115;
 }
-.bg-orange{
-    background-color:#f38509;
+
+.bg-orange {
+    background-color: #f38509;
 }
-.bg-yellow{
-    background-color:#ffe115;
+
+.bg-yellow {
+    background-color: #ffe115;
 }
-.fw-bold-600{
+
+.fw-bold-600 {
     font-weight: 600;
 }
 
 /* topbar - login */
-.top-bar{
+.top-bar {
     /*  */
     /* background-color: #000; */
     height: 50px;
 }
 
-.top-bar .login li{
+.top-bar .login li {
     /* yanyana alalım */
-    display: inline-block; 
+    display: inline-block;
     padding: 0 15px;
 }
 
-.top-bar .login li a{
+.top-bar .login li a {
 
     line-height: 50px;
     font-size: 12px;
@@ -63,20 +68,21 @@ li{
 
 }
 
-.user-basket .item-count{
+.user-basket .item-count {
     position: absolute;
-    top:3px;
+    top: 3px;
     right: 17px;
     width: 20px;
     height: 20px;
-    border-radius: 50%; /*yuvarlak*/
+    border-radius: 50%;
+    /*yuvarlak*/
     text-align: center;
     font-size: 11px;
     line-height: 20px;
 }
 
 /* kullanıcı sepete ekledikten sonraki ürünler */
-.top-bar .user-basket .dropdown-menu{
+.top-bar .user-basket .dropdown-menu {
     padding: 20px;
     border: 0;
     border-radius: 0;
@@ -85,4 +91,11 @@ li{
     right: 0 !important;
     left: auto !important;
     box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* kullanıcı sepete ekledikten sonraki ürünlerin divi scroll bar*/
+.overflow-custom {
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
