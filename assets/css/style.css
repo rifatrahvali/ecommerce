@@ -26,18 +26,63 @@ li{
     font-family: "Playfair", serif;
 }
 
-.text-orage{
+.text-orange{
     color:#f38509;
 }
 .text-yellow{
     color:#ffe115;
 }
-.bg-orage{
-    color:#f38509;
+.bg-orange{
+    background-color:#f38509;
 }
 .bg-yellow{
-    color:#ffe115;
+    background-color:#ffe115;
 }
 .fw-bold-600{
     font-weight: 600;
+}
+
+/* topbar - login */
+.top-bar{
+    /*  */
+    /* background-color: #000; */
+    height: 50px;
+}
+
+.top-bar .login li{
+    /* yanyana alalım */
+    display: inline-block; 
+    padding: 0 15px;
+}
+
+.top-bar .login li a{
+
+    line-height: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.user-basket .item-count{
+    position: absolute;
+    top:3px;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /*yuvarlak*/
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+/* kullanıcı sepete ekledikten sonraki ürünler */
+.top-bar .user-basket .dropdown-menu{
+    padding: 20px;
+    border: 0;
+    border-radius: 0;
+    min-width: 350px;
+    top: 15px !important;
+    right: 0 !important;
+    left: auto !important;
+    box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
 }
