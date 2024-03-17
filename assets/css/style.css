@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    /* altı çizili olmayacak */
+    text-decoration: none;
+    color: #2d3a4b;
+}
+
+body{
+    /* ust alt 0 - sağ sol ortala */
+    margin: 0 auto;
+    font-family:"Montserrat", sans-serif;
+}
+li{
+    list-style: none;
+}
+
+.font-montserrat{
+    font-family:"Montserrat", sans-serif;
+}
+
+.font-playfair{
+    font-family: "Playfair", serif;
+}
+
+.text-orage{
+    color:#f38509;
+}
+.text-yellow{
+    color:#ffe115;
+}
+.bg-orage{
+    color:#f38509;
+}
+.bg-yellow{
+    color:#ffe115;
+}
+.fw-bold-600{
+    font-weight: 600;
+}
