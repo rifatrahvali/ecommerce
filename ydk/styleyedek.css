@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /* altı çizili olmayacak */
+    text-decoration: none;
+    color: #2d3a4b;
+}
+
+body {
+    /* ust alt 0 - sağ sol ortala */
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.font-playfair {
+    font-family: "Playfair", serif;
+}
+
+.text-orange {
+    color: #f38509;
+}
+
+.text-yellow {
+    color: #ffe115;
+}
+
+.bg-orange {
+    background-color: #f38509;
+}
+
+.bg-yellow {
+    background-color: #ffe115;
+}
+
+.fw-bold-600 {
+    font-weight: 600;
+}
+
+/* topbar - login */
+.top-bar {
+    /*  */
+    /* background-color: #000; */
+    height: 50px;
+}
+
+.top-bar .login li {
+    /* yanyana alalım */
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.top-bar .login li a {
+
+    line-height: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.user-basket .item-count {
+    position: absolute;
+    top: 3px;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /*yuvarlak*/
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+/* kullanıcı sepete ekledikten sonraki ürünler */
+.top-bar .user-basket .dropdown-menu {
+    padding: 20px;
+    border: 0;
+    border-radius: 0;
+    min-width: 350px;
+    top: 15px !important;
+    right: 0 !important;
+    left: auto !important;
+    box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
+}
+.top-bar .basket-buttons a{
+    border-radius: 0 !important;
+}
+/* kullanıcı sepete ekledikten sonraki ürünlerin divi scroll bar*/
+.overflow-custom {
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* header bölümündeki navbar */
+header{
+    height: 130px;
+    padding: 30px;
+
+}
+.logo{
+    max-width: 70px;
+}
+header nav li.nav-item{
+    margin: 0 5px;
+    padding: 15px 0;
+}
+/* navlink sınıfına sahip olan tüm a etiketleri */
+header nav li a.nav-link{
+    font-size: 14px !important;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 10px;
+    letter-spacing: 3px;
+    position: relative  ;
+    transition: all .3s linear;
+}
+
+header nav li a.nav-link:before{
+    width: 0;
+    margin: 0 auto;
+    position: absolute;
+    content: "";
+    height: 5px;
+    left: 0;
+    top: 45%;
+    z-index: -1;
+    background-color: #ffe115;
+    transition: 0.2s ease-in-out;
+}
+
+header nav li a.nav-link:hover:before{
+    width: 100%;
+}
+
+/* li'nin active olanları için */
+header nav li.active a.nav-link:before{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    content: "";
+    height: 5px;
+    left: 0;
+    top: 45%;
+    z-index: -1;
+    background-color: #ffe115;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-right{
+    margin-left: 20px;
+    margin-top: -5px;
+
+}
+.nav-right i{
+    font-size: 20px;
+}
+.zoom:before{
+    transition: transform 1s ease;
+}
+.zoom:hover:before{
+    transform: scale(1.5);
+}
+
+.search-inside{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 500;
+}
+
+.search-inside .position-center-center{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+
+.search-inside .seach{
+    display: inline;
+    width: 100%;
+}
+
+.search-inside .search input{
+    background-color: #fff;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    height: 60px;
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
+
+.search-inside .search input:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.search-inside .search button{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+}
+.search-inside  .search-close{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 40px;
+    cursor:pointer;
+    color:#fff;
+}
