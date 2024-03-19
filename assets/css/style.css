@@ -64,8 +64,8 @@ li {
 
 .user-basket .item-count {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -15px;
+    right: -10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -290,6 +290,80 @@ header nav li.active a.nav-link:before {
     background-color: #f38509;
 }
 
+.slider,
+.swiper-container{
+    overflow-x: hidden;
+}
 
+/* slider içerisindeki slide */
+.slider .slide{
+    /* birden fazla elementleri yanyana getir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+.slider .slide img{
+    width: 100%;
+    height: 100%;
+    /* görsel container'a sığdırır ve ortasını merkezle  */
+    object-fit: cover;
+}
 
+.home-swiper .swiper-button-prev,
+.home-swiper .swiper-button-next{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    transition: background-color .4s ease;
+}
 
+.home-swiper .swiper-button-prev:hover,
+.home-swiper .swiper-button-next:hover{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    transition: background-color .4s ease;
+}
+
+.slider-title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-title h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.slider-title h2{
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.slider-title a{
+    /* köşelerini sıfırlayalım */
+    border-radius: 0; 
+    font-size: 20px;
+    padding: 15px 100px;
+}
+
+.title-wrapper{
+    display: flex;
+    /* swipper'ı flex yapısı ile kullan */
+    flex-direction: column;
+    /* öğeleri dikey hizalar */
+    justify-content: center;
+    /* içeriği yatayda hizalar*/
+    align-items: center;
+    /* içeriği dikeyde hizalar*/
+}

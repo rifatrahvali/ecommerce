@@ -38,6 +38,7 @@
 </head>
 
 <body>
+    <!-- Top Bar Bölümü -->
     <div class="top-bar bg-black">
         <div class="container">
             <div class="login float-end ">
@@ -153,6 +154,7 @@
         </div>
     </div>
 
+    <!-- Menü Bölümü -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -298,26 +300,44 @@
         </nav>
     </header>
 
-    <section class="slider position-relative bg-orange mt-2">
+    <!-- Orta Slider Bölümü -->
+    <section class="slider position-relative bg-orange mt-3">
         <!-- Slider main container -->
         <div class="home-swiper swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <!-- Slides - Slaytlar-->
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="assets/images/slide-bg-2-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="slider-title">
+                        <div class="title-wrapper">
+                            <h3 class="font-playfair">Sepette %30 İndirim</h3>
+                            <h2 class="">Mart İndirimleri</h2>
+                            <a href="" class="btn btn-outline-dark text-center mt-3">Satın Al</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <img src="assets/images/slide-bg-2-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="slider-title">
+                        <div class="title-wrapper">
+                            <h3 class="font-playfair">Sepette %10 İndirim</h3>
+                            <h2 class="">Şubat İndirimleri</h2>
+                            <a href="" class="btn btn-outline-dark text-center mt-3">Satın Al</a>
+                        </div>
+                    </div>
+                </div>
                 ...
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
+            <!-- Navigasyon butonları -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
 
