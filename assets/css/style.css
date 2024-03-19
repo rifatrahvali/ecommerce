@@ -510,3 +510,27 @@ header nav li.active a.nav-link:before {
     font-weight: 500;
     font-size: 14px;
 }
+footer {
+    background-color: #171e27;
+    padding: 90px 0;
+}
+
+footer h6 {
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li a {
+    font-size: 12px;
+    color: #999;
+    line-height: 26px;
+    display: inline-block;
+}
+
+footer li a:hover {
+    color: #fff;
+}
