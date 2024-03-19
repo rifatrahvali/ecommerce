@@ -19,8 +19,6 @@
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -34,87 +32,132 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
         rel="stylesheet">
 
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <!-- top-bar üst menü -->
-    <div class="top-bar bg-dark">
+    <div class="top-bar bg-black">
         <div class="container">
-            <div class="login float-end">
+            <div class="login float-end ">
                 <ul class="login-list">
-                    <li><a href="#" class="text-white">Giriş</a></li>
-                    <li><a href="#" class="text-white">Kayıt</a></li>
-                    <li><a href="#" class="text-white">Siparişlerim</a></li>
-                    <li><a href="#" class="text-white">Sepetim</a></li>
-
-                    <!-- kullanıcının sepeti -->
+                    <li><a href="" class="text-white">GİRİŞ</a></li>
+                    <li><a href="" class="text-white">KAYIT</a></li>
+                    <li><a href="" class="text-white">SİPARİŞLERİM</a></li>
+                    <li><a href="" class="text-white">SEPETİM</a></li>
                     <li class="dropdown user-basket position-relative">
-                        <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="bi bi-cart text-white fs-4 zoom"></i>
+                        <a href="javascript:void(0)" class="dropdown-toggle position-relative" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-cart zoom text-white fs-4"></i>
                             <span class="item-count bg-orange text-black">13</span>
                         </a>
-                        <!-- kullanıcı sepete ekledikten sonraki ürünler cartı-->
                         <div class="dropdown-menu">
                             <div class="row overflow-custom">
-                                <!-- her bir ürün başlangıç -->
                                 <div class="col-12">
                                     <div class="card border-0">
                                         <div class="row">
                                             <div class="col-4">
-                                                <img src="/assets/images/shopping.webp" alt="image Yok" srcset=""
+                                                <img src="assets/images/shopping.webp" alt=""
                                                     class="img-fluid rounded-start">
                                             </div>
                                             <div class="col-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Ürün Başlığı</h5>
-                                                    <p class="card-text">Fiyat: 10TL</p>
-                                                    <p class="card-text">Fiyat: 10TL</p>
+                                                    <p class="card-text">Fiyat: 10 TL</p>
+                                                    <p class="card-text">Adet: 1</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- her bir ürün bitiş -->
+
+                                <div class="col-12">
+                                    <hr class="my-4">
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="card border-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="assets/images/shopping.webp" alt=""
+                                                    class="img-fluid rounded-start">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ürün Başlığı</h5>
+                                                    <p class="card-text">Fiyat: 10 TL</p>
+                                                    <p class="card-text">Adet: 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="my-4">
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="card border-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="assets/images/shopping.webp" alt=""
+                                                    class="img-fluid rounded-start">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ürün Başlığı</h5>
+                                                    <p class="card-text">Fiyat: 10 TL</p>
+                                                    <p class="card-text">Adet: 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="my-4">
+                                </div>
                             </div>
-                            <!-- sepetteki toplam ürünler tasarımı başlangıç -->
                             <div class="row total-price">
                                 <div class="col-12">
                                     <hr class="my-4">
                                 </div>
-                                <!-- fiyat -->
+
                                 <div class="col-12">
                                     <h5 class="text-center">
-                                        <span>Toplam</span>
+                                        <span>Toplam:</span>
                                         <span>250.00 TL</span>
                                     </h5>
                                 </div>
-                                <!-- butonlar -->
+
                                 <div class="col-12 basket-buttons">
                                     <div class="row">
                                         <div class="col-6">
                                             <a href="" class="btn btn-outline-warning w-100">Sepet</a>
                                         </div>
+
                                         <div class="col-6">
                                             <a href="" class="btn btn-outline-success w-100">Ödeme</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- sepetteki toplam ürünler tasarımı bitiş -->
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="logo" srcset="" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -123,24 +166,115 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link active" aria-current="page" href="#">Markalar</a>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link active dropdown-toggle" aria-current="page" href="javascript:void(0)"
+                                data-bs-toggle="dropdown" role="button">
+                                MARKALAR
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-md-9 nav-brands">
+                                        <h4 class="mb-4">Tüm Markalar</h4>
+                                        <div class="row">
+                                            <div class="col navbar-column">
+                                                <a href="product-list.html" class="dropdown-link">Adidas</a>
+                                                <a href="#" class="dropdown-link">Nike</a>
+                                                <a href="#" class="dropdown-link">Puma</a>
+                                                <a href="#" class="dropdown-link">Skechers</a>
+                                                <a href="#" class="dropdown-link">Lotto</a>
+                                                <a href="#" class="dropdown-link">Huf</a>
+                                                <a href="#" class="dropdown-link">Reebok</a>
+                                                <a href="#" class="dropdown-link">Parafina</a>
+                                                <a href="#" class="dropdown-link">Salomon</a>
+                                            </div>
+                                            <div class="col navbar-column">
+                                                <a href="#" class="dropdown-link">Rains</a>
+                                                <a href="#" class="dropdown-link">United 4</a>
+                                                <a href="#" class="dropdown-link">Vans</a>
+                                                <a href="#" class="dropdown-link">Veja</a>
+                                                <a href="#" class="dropdown-link">Market</a>
+                                                <a href="#" class="dropdown-link">Nautica</a>
+                                                <a href="#" class="dropdown-link">Element</a>
+                                                <a href="#" class="dropdown-link">Etnies</a>
+                                                <a href="#" class="dropdown-link">Funko</a>
+                                            </div>
+                                            <div class="col navbar-column">
+                                                <a href="#" class="dropdown-link">Columbia</a>
+                                                <a href="#" class="dropdown-link">Brekenstock</a>
+                                                <a href="#" class="dropdown-link">Casio</a>
+                                                <a href="#" class="dropdown-link">Converse</a>
+                                                <a href="#" class="dropdown-link">Crocs</a>
+                                                <a href="#" class="dropdown-link">Jordan</a>
+                                                <a href="#" class="dropdown-link">Primitive</a>
+                                                <a href="#" class="dropdown-link">Timberland</a>
+                                                <a href="#" class="dropdown-link">XD Design</a>
+                                            </div>
+                                            <div class="col navbar-column">
+                                                <a href="#" class="dropdown-link">Columbia</a>
+                                                <a href="#" class="dropdown-link">Brekenstock</a>
+                                                <a href="#" class="dropdown-link">Casio</a>
+                                                <a href="#" class="dropdown-link">Converse</a>
+                                                <a href="#" class="dropdown-link">Crocs</a>
+                                                <a href="#" class="dropdown-link">Jordan</a>
+                                                <a href="#" class="dropdown-link">Primitive</a>
+                                                <a href="#" class="dropdown-link">Timberland</a>
+                                                <a href="#" class="dropdown-link">Tüm Markalar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h4 class="mb-4">Tredler</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="nav-brand-swiper swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="">
+                                                                <img src="assets/images/product2.webp" class="img-fluid"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="">
+                                                                <img src="assets/images/product3.jpeg" class="img-fluid"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="">
+                                                                <img src="assets/images/product4.jpeg" class="img-fluid"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kadın</a>
+                            <a class="nav-link" href="#">KADIN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Erkek</a>
+                            <a class="nav-link" href="#">MARKALAR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">çocuk</a>
+                            <a class="nav-link" href="#">ÇOCUK</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">YENİ Sezon</a>
+                            <a class="nav-link" href="#">YENİ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">İNDİRİMLER</a>
                         </li>
+
+
+
                     </ul>
                 </div>
                 <div class="nav-right">
@@ -149,11 +283,11 @@
                     </a>
                     <div class="search-inside bg-orange">
                         <i class="bi bi-x search-close"></i>
-                        <div class="seach-overlay"></div>
+                        <div class="search-overlay"></div>
                         <div class="position-center-center">
-                            <div class="search animate__animated animate__bounce">
+                            <div class="search animate__animated animate__backInUp">
                                 <form action="">
-                                    <input type="search" placeholder="Arama" name="" id="">
+                                    <input type="search" placeholder="Arama">
                                     <button type="submit"><i class="bi bi-check-circle"></i></button>
                                 </form>
                             </div>
@@ -164,7 +298,30 @@
         </nav>
     </header>
 
-    <!-- section slider-->
+    <section class="slider position-relative bg-orange mt-2">
+        <!-- Slider main container -->
+        <div class="home-swiper swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+
 
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -175,11 +332,11 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- özelleştirdiğimiz js -->
-    <script src="assets/js/main.js"></script>
-
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- özelleştirdiğimiz js -->
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
