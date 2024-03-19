@@ -293,7 +293,8 @@ header nav li.active a.nav-link:before {
 }
 
 .slider,
-.swiper-container{
+.swiper-container,
+.brand-swiper{
     overflow-x: hidden;
 }
 
@@ -369,4 +370,63 @@ header nav li.active a.nav-link:before {
     /* içeriği yatayda hizalar*/
     align-items: center;
     /* içeriği dikeyde hizalar*/
+}
+
+/* markalar slider'ı - feature-brands */
+
+.feature-brands h3{
+    letter-spacing: 3px;
+    font-weight: 600px;
+    text-transform: uppercase;
+}
+
+.feature-brands .brand-swiper{
+    height: 100px;
+    line-height: 100px;
+}
+
+.feature-brands .brand-slider{
+    transition: filter 0.3s, background-color 0.3s; /*mouse üzerinden gittiğinde*/
+    background-color: white;
+}
+.feature-brands .brand-slider:hover{
+    cursor: pointer;
+    background-color:#ffe115;
+    transition: filter 0.3s, background-color 0.3s; /*mouse üzerine geldiğinde*/
+}
+
+.feature-brands .brand-slider:hover img{
+    filter: brightness(0) invert(1);
+    
+}
+
+.feature-brands .swiper-button-next,
+.feature-brands .swiper-button-prev{
+    top: 14px;
+    bottom: auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+
+.feature-brands .swiper-button-next:after,
+.feature-brands .swiper-button-prev:after{
+    font-size: 25px;
+    color: black;
+}
+
+.feature-brands .swiper-button-next:hover,
+.feature-brands .swiper-button-prev:hover{
+    border-radius: 0;
+    border: 3px solid black;
+}
+
+.feature-brands .swiper-button-next{
+    right: 25px;
+    left: auto;
+}
+.feature-brands .swiper-button-prev{
+    right: 60px;
+    left: auto;
 }
