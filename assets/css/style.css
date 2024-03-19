@@ -640,3 +640,160 @@ main{
     position: relative;
     float: left;
 }
+
+/* product detail sayfası stilleri */
+.product-image-wrapper .swiper-button-prev{
+    left:0;
+}
+.product-image-wrapper .swiper-button-next{
+    right:0;
+}
+
+.product-image-wrapper .swiper-button-prev:after,
+.product-image-wrapper .swiper-button-next:after{
+    font-size: 25px;
+    color: #f38509;
+}
+
+.big-slider{
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 50px;
+}
+.thumb-sliders{
+    min-height: 200px;
+}
+.thumb-sliders-buttons{
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.thumb-sliders-buttons span:hover{
+    color: #f38509;
+}
+.thumb-image,
+.big-image img{
+    width: 100%;
+}
+
+/* sağ taraf - ürün açıklama tarafı */
+.product-detail{
+
+}
+
+.product-detail h4{
+    letter-spacing: 2px;
+}
+.product-detail h6{
+    letter-spacing: 1px;
+}
+
+.product-detail hr{
+    border-top: 2px solid black;
+}
+.price{
+    letter-spacing: 1px;
+}
+
+.discount-rate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f38509;
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 0;
+}
+
+.discount-rate span{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.product-detail .product-short-description{
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.shopping .bi-heart{
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.piece-wrapper .input-group{
+    border: 1px solid #f38509;
+    border-radius: 0;
+}
+
+.piece-wrapper .input-group span{
+    height: 50px;
+    width: 33%;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    font-size: 25px;
+    color: #f38509;
+    cursor: pointer;
+}
+.piece-wrapper input{
+    background-color: white;
+    max-width: 33%;
+    text-align: center;
+    color: black;
+    border: none;
+}
+
+.piece-wrapper .input-group span.piece-increase:before{
+    left:0;
+    right: auto;
+}
+.piece-wrapper .input-group span.piece-decrease:before,
+.piece-wrapper .input-group span.piece-increase:before{
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    background-color: #f38509;
+    top: 50%;
+    right: 0;
+    content: "";
+    margin-top: -10px;
+}
+
+.shopping select{
+    height: 50px;
+    border: 1px solid #f38509;
+    color: black;
+}
+.shopping select:focus{
+    border-color:#f38509;
+    outline: 0;
+    box-shadow: none;
+}
+.add-to-card{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0;  
+}
+.add-to-card:hover{
+    background-color: #d28e40;
+}
+.accordion-item{
+    border-color: #f38509;
+}
+.accordion-button:focus{
+    border-color: #f38509;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    border-color: #f38509;
+    color: white;
+}
