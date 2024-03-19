@@ -534,3 +534,90 @@ footer li a {
 footer li a:hover {
     color: #fff;
 }
+
+/* product-list sayfasındaki main */
+/* product-filter sol taraf kategori ve filtreleme bölümü */
+
+main{
+    padding: 30px;
+}
+
+.sortby{
+    border: unset;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.product-list-info .product-count{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.product-filter{
+    max-width: calc(100vh-240px);
+    overflow: hidden scroll;
+    position: sticky;
+    top: 0;
+}
+.product-filter .filter-item-wrapper{
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+.product-filter .filter-title{
+    font-size: 14px;
+}
+.product-filter .filter-detail{
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.filter-item input[type=checkbox]{
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 0;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.filter-item input[type=checkbox]:checked{
+    background-color: #f38509;
+}
+.filter-item input[type=checkbox]:focus{
+    outline: none;
+    box-shadow: none;
+}
+.filter-item label{
+    font-size: 13px;
+}
+.filter-price input{
+    outline: none;
+    box-shadow: none;
+    font-size: 11px;
+    border: 1px solid black;  
+}
+.filter-price input::placeholder{
+    color: black;
+    font-size: 10px;
+}
+.filter-price input:focus{
+    box-shadow: none;
+    border: 1px solid #f38509;
+}
+.filter-price button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color:black;
+    border: none;
+}
+.filter-price button:hover{
+    color:#f38509;
+}
+
+.filter-price > *{
+    padding-left: 12px;
+    padding-right: 3px;
+}
