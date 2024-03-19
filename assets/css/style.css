@@ -621,3 +621,22 @@ main{
     padding-left: 12px;
     padding-right: 3px;
 }
+
+/* pagination */
+.pagination li.active a,
+.pagination li a:hover{
+    background-color:#f38509;
+    color: black;
+}
+.pagination li a{
+    background-color: #2d3a4b;
+    color: white;
+    margin: 0 2px;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    float: left;
+}
