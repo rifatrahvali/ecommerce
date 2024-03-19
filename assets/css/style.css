@@ -401,7 +401,9 @@ header nav li.active a.nav-link:before {
 }
 
 .feature-brands .swiper-button-next,
-.feature-brands .swiper-button-prev{
+.feature-brands .swiper-button-prev,
+.feature-season-products .swiper-button-next,
+.feature-season-products .swiper-button-prev{
     top: 14px;
     bottom: auto;
     width: 40px;
@@ -411,22 +413,28 @@ header nav li.active a.nav-link:before {
 
 
 .feature-brands .swiper-button-next:after,
-.feature-brands .swiper-button-prev:after{
+.feature-brands .swiper-button-prev:after,
+.feature-season-products .swiper-button-next:after,
+.feature-season-products .swiper-button-prev:after{
     font-size: 25px;
     color: black;
 }
 
 .feature-brands .swiper-button-next:hover,
-.feature-brands .swiper-button-prev:hover{
+.feature-brands .swiper-button-prev:hover,
+.feature-season-products .swiper-button-next:hover,
+.feature-season-products .swiper-button-prev:hover{
     border-radius: 0;
     border: 3px solid black;
 }
 
-.feature-brands .swiper-button-next{
+.feature-brands .swiper-button-next,
+.feature-season-products .swiper-button-next{
     right: 25px;
     left: auto;
 }
-.feature-brands .swiper-button-prev{
+.feature-brands .swiper-button-prev,
+.feature-season-products .swiper-button-prev{
     right: 60px;
     left: auto;
 }
@@ -446,4 +454,59 @@ header nav li.active a.nav-link:before {
     left: 50%;
     transform: translate(-50%,-50%);
     object-fit: cover;
+}
+
+/* Sezonun Marka ürünleri */
+.feature-season-products{
+    background-color: #f38509;
+}
+
+.wrapper-product .product-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapper-product .product-tag {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+}
+
+.wrapper-product .favorite,
+.wrapper-product .un-favorite {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.wrapper-product .product-brand {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-bottom: 2px;
+    letter-spacing: 1px;
+    background-color: rgb(245 151 60 / 21%);;
+}
+
+.wrapper-product .product-info .product-title {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.wrapper-product .product-info .product-description {
+    font-size: 14px;
+}
+
+.wrapper-product .product-info .product-price {
+    font-weight: 500;
+    font-size: 14px;
 }

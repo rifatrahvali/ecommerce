@@ -50,3 +50,24 @@ const brandSwiper = new Swiper('.brand-swiper', {
         },
     },
 });
+
+
+// sezon ürünleri
+
+const seasonProductSwiper = new Swiper('.season-product-swiper', {
+    speed: 1400,
+    navigation: {
+        nextEl: "#seasonNext",
+        prevEl: "#seasonPrev"
+    },
+    autoplay: {
+        delay: 1000,
+        pauseOnMouseEnter: true
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
+    }
+});
