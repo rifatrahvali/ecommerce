@@ -192,7 +192,9 @@ header nav li.active a.nav-link:before {
     width: 70%;
     left: 15%;
     padding: 30px;
-    top: 105px;
+    top: 113px;
+    border-radius: 0;
+    border: none;
 }
 
 .dropdown-menu a.dropdown-link {
@@ -209,7 +211,7 @@ header nav li.active a.nav-link:before {
 }
 
 .navbar-column {
-    border-right: 1px solid rgba(0, 0, 0, 0.16);
+    border-right: 3px solid black;
     padding-left: 35px;
 }
 
@@ -355,6 +357,7 @@ header nav li.active a.nav-link:before {
     border-radius: 0; 
     font-size: 20px;
     padding: 15px 100px;
+    border: 3px solid black;
 }
 
 .title-wrapper{
