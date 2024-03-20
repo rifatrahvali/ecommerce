@@ -797,3 +797,104 @@ main{
     border-color: #f38509;
     color: white;
 }
+
+/* Cart Sayfası */
+
+.cart-page table td img{
+    width: 100px;
+
+}
+.cart-pagetable td{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.cart-page table div{
+    font-size: 11px;
+}
+.cart-page table td{
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cart-page table tbody,
+.cart-page table td,
+.cart-page table tfoot,
+.cart-page table th,
+.cart-page table thead,
+.cart-page table tr {
+    border-color: #d28e40;
+}
+
+.cart-page .piece-wrapper .input-group{
+    width: 150px;
+}
+
+.cart-page table .piece-wrapper .input-group span{
+    height: unset;
+    line-height: unset;
+}
+
+/* cart basket detail */
+
+.btn-approve-basket{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.btn-approve-basket:hover{
+    background-color: #d28e40;
+    color: white;
+}
+.basket-detail{
+    height: 100%;
+    background-color: #f7f7f7;
+    position: sticky;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.grand-total{
+    border: 1px solid #f38509;
+    padding: 30px;
+}
+.grand-total p{
+    font-size: 12px;
+    border-bottom: 1px solid black;
+}
+.grand-total p:last-child{
+    border-bottom: unset;
+    font-size: 14px;
+}
+.grand-total i{
+    cursor: pointer;
+}
+.grand-total i:hover{
+    color: #f38509;
+}
+
+.discount-wrapper{
+    border: 1px solid #f38509;
+    padding: 20px 10px;
+    border-radius: 0;
+}
+
+.discount-wrapper h5{
+    color: #f38509;
+}
+
+.discount-wrapper input{
+    height: 40px;
+    font-size: 12px;
+
+}
+.discount-wrapper input:focus{
+    border-color: #f38509;
+    box-shadow: none;
+}
+.discount-wrapper button{
+    font-size: 12px;
+    height: 40px;
+}
