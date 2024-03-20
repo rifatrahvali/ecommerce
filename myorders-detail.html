@@ -51,7 +51,6 @@
                     <li><a href="" class="text-white">GİRİŞ</a></li>
                     <li><a href="" class="text-white">KAYIT</a></li>
                     <li><a href="myorders.html" class="text-white">SİPARİŞLERİM</a></li>
-                    <li><a href="myorders.html" class="text-white">Test-Siparis-Detay</a></li>
                     <li><a href="" class="text-white">SEPETİM</a></li>
                     <li class="dropdown user-basket position-relative">
                         <a href="javascript:void(0)" class="dropdown-toggle position-relative" role="button"
@@ -300,82 +299,101 @@
 
     <!-- main - detail bölümü -->
     <main>
-        <div class="container shadow p-5">
+        <div class="container">
 
             <div class="row">
 
-                <div class="col-md-9 cart-page">
-                    <h4>Sepetim
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Ürünler</th>
-                                        <th scope="col">Ürün Bilgi</th>
-                                        <th scope="col">Adet</th>
-                                        <th scope="col">Birim Fiyat</th>
-                                        <th scope="col">Toplam Fiyat</th>
-                                        <th scope="col">Sil</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><img src="assets/images/product1.jpeg"></td>
-                                        <td>
-                                            <div>niteball</div>
-                                            <div>sneaker</div>
-                                            <div>adidas</div>
-                                            <div>beden : 37</div>
-                                        </td>
-                                        <td>
-                                            <div class="piece-wrapper">
-                                                <div class="input-group">
-                                                    <span class="piece-decrease"> - </span>
-                                                    <input type="text" class="piece" value="0" disabled>
-                                                    <span class="piece-increase"> + </span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>10</td>
-                                        <td>20</td>
-                                        <td><i class="bi bi-trash"></i></td>
-                                    </tr>
+                <div class="col-md-12 my-orders p-5 shadow">
+                    <h4>#10 numaralı şiparişin detayı</h4>
+                    <h6>Marka</h6>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ürünler</th>
+                                    <th scope="col">Ürün Bilgi</th>
+                                    <th scope="col">Adet</th>
+                                    <th scope="col">Birim Fiyat</th>
+                                    <th scope="col">Toplam Fiyat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="assets/images/product1.jpeg"></td>
+                                    <td>
+                                        <div>niteball</div>
+                                        <div>sneaker</div>
+                                        <div>adidas</div>
+                                        <div>beden : 37</div>
+                                    </td>
+                                    <td class="s-amout">
+                                        <div>1 Adet</div>
 
-                                </tbody>
-                            </table>
+                                    </td>
+                                    <td>10</td>
+                                    <td>20</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Toplam Fiyat</td>
+                                    <td>20</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    Teslimat Bilgileri
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-orange">Teslimat Adresi</h6>
+                                    <div class="my-4">Rıfat Rahvalı</div>
+                                    <div>Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </h4>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Ödeme Bilgileri</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="pull-right payment-type">
+                                                <i class="bi bi-credit-card"></i>
+                                                Ödeme Bilgileri
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="grand-total mt-4 border-0">
+                                        <p>Ürün Toplamı : <span class="pull-right">199.90TL</span></p>
+                                        <p>Kargo Ücreti : <span class="pull-right">39.90TL</span></p>
+                                        <p>indirim Kodu :
+                                            <br>
+                                            #Sepette30 : <span class="pull-right">39.90TL</i></span>
+                                        </p>
+                                        <p><strong>Toplam :</strong> <span class="pull-right">199.90TL</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-3 basket-detail shadow">
-                    <a href="" class="btn bg-orange text-white w-100 btn-approve-basket">
-                        Sepeti Onayla
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-                    <div class="grand-total mt-4">
-                        <p>Ürün Toplamı : <span class="pull-right">199.90TL</span></p>
-                        <p>Kargo Ücreti : <span class="pull-right">39.90TL</span></p>
-                        <p>indirim Kodu :
-                            <br>
-                            #Sepette30 : <span class="pull-right">39.90TL <i class="bi bi-trash"></i></span>
-                        </p>
-                        <p><strong>Toplam :</strong> <span class="pull-right">199.90TL</span></p>
-                    </div>
-                    <div class="discount-wrapper mt-4">
-                        <h5 class="color-orange">İndirim Kodu</h5>
 
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username">
-                            <button class="btn btn-outline-success" type="button">Uygula</button>
-                        </div>
-
-                    </div>
-                    <a href="" class="btn bg-orange text-white w-100 btn-approve-basket mt-4">
-                        Sepeti Onayla
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-                </div>
             </div>
+
         </div>
     </main>
 

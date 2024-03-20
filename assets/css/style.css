@@ -818,6 +818,27 @@ main{
     padding-bottom: 30px;
 }
 
+
+.my-orders .cart-page table td img{
+    width: 100px;
+
+}
+.my-orders .cart-pagetable td{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.my-orders .cart-page table div{
+    font-size: 11px;
+}
+.my-orders .cart-page table td{
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
 .cart-page table tbody,
 .cart-page table td,
 .cart-page table tfoot,
@@ -826,6 +847,17 @@ main{
 .cart-page table tr {
     border-color: #d28e40;
 }
+
+
+.my-orders .cart-page table tbody,
+.my-orders .cart-page table td,
+.my-orders .cart-page table tfoot,
+.my-orders .cart-page table th,
+.my-orders .cart-page table thead,
+.my-orders .cart-page table tr {
+    border-color: #d28e40;
+}
+
 
 .cart-page .piece-wrapper .input-group{
     width: 150px;
@@ -1001,4 +1033,31 @@ main{
 .btn-contracts-approve:hover{
     background-color: #d28e40;
     color: black !important;
+}
+
+/* detaylar */
+
+.s-amount div{
+    font-size: 12px;
+}
+
+.my-orders table td{
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.my-orders img{
+    width: 100px;
+}
+
+.my-orders .card,
+.my-orders .card-header{
+    border-color: #f38509;
+}
+.my-orders .card-header{
+    background-color: #f38509;
+}
+.my-orders .grand-total{
+    padding: 0;
 }
