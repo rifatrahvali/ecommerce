@@ -47,6 +47,7 @@
                     <li><a href="product-list.html" class="text-white">Test-Product-List</a></li>
                     <li><a href="product-detail.html" class="text-white">Test-Product-Detail</a></li>
                     <li><a href="cart.html" class="text-white">Test-Cart-Detail</a></li>
+                    <li><a href="checkout.html" class="text-white">Test-Checkout</a></li>
                     <li><a href="" class="text-white">GİRİŞ</a></li>
                     <li><a href="" class="text-white">KAYIT</a></li>
                     <li><a href="" class="text-white">SİPARİŞLERİM</a></li>
@@ -410,7 +411,7 @@
 
                 <div class="col-md-3 basket-detail shadow">
                     <a href="" class="btn bg-orange text-white w-100 btn-approve-basket">
-                        Sepeti Onayla
+                        Ödeme Yap
                         <i class="bi bi-chevron-right"></i>
                     </a>
                     <div class="grand-total mt-4">
@@ -418,27 +419,62 @@
                         <p>Kargo Ücreti : <span class="pull-right">39.90TL</span></p>
                         <p>indirim Kodu :
                             <br>
-                            #Sepette30 : <span class="pull-right">39.90TL <i class="bi bi-trash"></i></span>
+                            #Sepette30 : <span class="pull-right">39.90TL</span>
                         </p>
                         <p><strong>Toplam :</strong> <span class="pull-right">199.90TL</span></p>
                     </div>
-                    <div class="discount-wrapper mt-4">
-                        <h5 class="color-orange">İndirim Kodu</h5>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username">
-                            <button class="btn btn-outline-success" type="button">Uygula</button>
+                    <div class="contract shadow p-4 mt-4">
+                        <label for="contract">
+                            <input type="checkbox" id="contract">
+                        </label>
+                        <div>
+                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#contractModal">Ön
+                                Bilgilendirme Koşulları</a>'ı ve
+                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#contractModal">Satış
+                                Sözleşmesi</a>'ni okudum, onayladım.
                         </div>
-
                     </div>
                     <a href="" class="btn bg-orange text-white w-100 btn-approve-basket mt-4">
-                        Sepeti Onayla
+                        Ödeme Yap
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Modal Mainin bittiği yere cssler karışmaması için-->
+    <div class="modal fade" id="contractModal" tabindex="-1" aria-labelledby="contractModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contractModalLabel">Sözleşmeler ve Formlar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Açıklama kısmı -->
+                    <div class="text-wrapper">
+                        <div class="contracts-text-wrapper">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis voluptate adipisci debitis
+                            consequuntur voluptates quisquam qui blanditiis doloribus porro natus? Et est totam autem
+                            perspiciatis.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-wrapper">
+                        <div class="contracts-text-wrapper">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis voluptate adipisci debitis
+                            consequuntur voluptates quisquam qui blanditiis doloribus porro natus? Et est totam autem
+                            perspiciatis.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-orange w-100 text-white btn-contracts-approve" data-bs-dismiss="modal">onayladım</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- footer -->
